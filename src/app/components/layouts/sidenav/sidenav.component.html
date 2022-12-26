@@ -1,0 +1,37 @@
+<div class="main-sidebar sidebar-style-2">
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+      <a href="/">Reptalys</a>
+    </div>
+    <div class="sidebar-brand sidebar-brand-sm">
+      <a href="/">Rs</a>
+    </div>
+
+    <ul class="sidebar-menu" *ngFor="let menu of sideMenu">
+      <li *ngIf="!menu.children; else dropdownMenu">
+        <a class="nav-link" href="{{ menu.route }}"
+          ><i class="{{ menu.iconName }}"></i>
+          <span>{{ menu.displayName }}</span></a
+        >
+      </li>
+
+      <ng-template #dropdownMenu>
+        <li class="menu-header">{{ menu.displayName }}</li>
+        <li class="dropdown active">
+          <a href="#" class="nav-link has-dropdown"
+            ><i class="{{ menu.iconName }}"></i
+            ><span>{{ menu.displayName }}</span></a
+          >
+          <ul class="dropdown-menu">
+            <li *ngFor="let submenu of menu.children">
+              <a class="nav-link" href="{{ submenu.route }}"
+                ><i class="{{ submenu.iconName }}"></i>
+                <span>{{ submenu.displayName }}</span></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ng-template>
+    </ul>
+  </aside>
+</div>

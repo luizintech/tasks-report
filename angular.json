@@ -24,16 +24,28 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/favicon.ico"
             ],
             "styles": [
               "src/global.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/modules/fontawesome/css/all.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "src/assets/modules/jquery.min.js",
+              "src/assets/modules/popper.js",
+              "src/assets/modules/tooltip.js",
+              "src/assets/modules/bootstrap/js/bootstrap.min.js",
+              "src/assets/modules/nicescroll/jquery.nicescroll.min.js",
+              "src/assets/modules/moment.min.js",
+              "src/assets/js/stisla.js",
+              "src/assets/modules/simple-weather/jquery.simpleWeather.min.js",
+              "src/assets/modules/chart.min.js",
+              "src/assets/modules/jqvmap/dist/jquery.vmap.min.js",
+              "src/assets/modules/jqvmap/dist/maps/jquery.vmap.world.js",
+              "src/assets/modules/summernote/summernote-bs4.js",
+              "src/assets/modules/chocolat/dist/js/jquery.chocolat.min.js",
+              "src/assets/js/scripts.js",
+              "src/assets/js/custom.js"
             ]
           },
           "configurations": {
@@ -95,9 +107,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
+            "src/src/assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/src/src/assets"
             ],
             "styles": [
               "src/styles.scss"

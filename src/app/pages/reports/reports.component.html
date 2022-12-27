@@ -1,1 +1,8 @@
 <p>report works!</p>
+
+<div *ngFor="let dayList of weekList">
+  <span
+    >{{ dayList.week }}: {{ dayList.numberDay }}
+    {{ dayList.active ? " - Active" : "" }}</span
+  >
+</div>

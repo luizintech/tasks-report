@@ -1,0 +1,12 @@
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\bin\Debug\net6.0\TasksReportManager.EFPersistence.deps.json
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\bin\Debug\net6.0\TasksReportManager.EFPersistence.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\bin\Debug\net6.0\TasksReportManager.EFPersistence.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.csproj.AssemblyReference.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.AssemblyInfoInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.AssemblyInfo.cs
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.csproj.CoreCompileInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\refint\TasksReportManager.EFPersistence.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\TasksReportManager.EFPersistence.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EFPersistence\obj\Debug\net6.0\ref\TasksReportManager.EFPersistence.dll

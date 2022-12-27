@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "TasksReportManager.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TasksReportManager.Application.Dtos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TasksReportManager.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TasksReportManager.Application.dll": {}
+        }
+      },
+      "TasksReportManager.Application.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TasksReportManager.EntitiesModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TasksReportManager.Application.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TasksReportManager.Application.Dtos.dll": {}
+        }
+      },
+      "TasksReportManager.EFPersistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TasksReportManager.EFPersistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TasksReportManager.EFPersistence.dll": {}
+        }
+      },
+      "TasksReportManager.EntitiesModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TasksReportManager.EntitiesModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TasksReportManager.EntitiesModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TasksReportManager.Application/1.0.0": {
+      "type": "project",
+      "path": "../TasksReportManager.Application/TasksReportManager.Application.csproj",
+      "msbuildProject": "../TasksReportManager.Application/TasksReportManager.Application.csproj"
+    },
+    "TasksReportManager.Application.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../TasksReportManager.Application.Dtos/TasksReportManager.Application.Dtos.csproj",
+      "msbuildProject": "../TasksReportManager.Application.Dtos/TasksReportManager.Application.Dtos.csproj"
+    },
+    "TasksReportManager.EFPersistence/1.0.0": {
+      "type": "project",
+      "path": "../TasksReportManager.EFPersistence/TasksReportManager.EFPersistence.csproj",
+      "msbuildProject": "../TasksReportManager.EFPersistence/TasksReportManager.EFPersistence.csproj"
+    },
+    "TasksReportManager.EntitiesModel/1.0.0": {
+      "type": "project",
+      "path": "../TasksReportManager.EntitiesModel/TasksReportManager.EntitiesModel.csproj",
+      "msbuildProject": "../TasksReportManager.EntitiesModel/TasksReportManager.EntitiesModel.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "TasksReportManager.Application >= 1.0.0",
+      "TasksReportManager.EFPersistence >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Luiz Godoy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.API.Infra\\TasksReportManager.API.Infra.csproj",
+      "projectName": "TasksReportManager.API.Infra",
+      "projectPath": "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.API.Infra\\TasksReportManager.API.Infra.csproj",
+      "packagesPath": "C:\\Users\\Luiz Godoy\\.nuget\\packages\\",
+      "outputPath": "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.API.Infra\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Luiz Godoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.Application\\TasksReportManager.Application.csproj": {
+              "projectPath": "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.Application\\TasksReportManager.Application.csproj"
+            },
+            "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.EFPersistence\\TasksReportManager.EFPersistence.csproj": {
+              "projectPath": "C:\\.projetos\\tasks-report\\api-netcore\\TasksReportManager\\TasksReportManager.EFPersistence\\TasksReportManager.EFPersistence.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

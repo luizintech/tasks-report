@@ -1,0 +1,15 @@
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\bin\Debug\net6.0\TasksReportManager.Application.Dtos.deps.json
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\bin\Debug\net6.0\TasksReportManager.Application.Dtos.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\bin\Debug\net6.0\TasksReportManager.Application.Dtos.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\bin\Debug\net6.0\TasksReportManager.EntitiesModel.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\bin\Debug\net6.0\TasksReportManager.EntitiesModel.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.csproj.AssemblyReference.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.AssemblyInfoInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.AssemblyInfo.cs
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.csproj.CoreCompileInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.csproj.CopyComplete
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\refint\TasksReportManager.Application.Dtos.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\TasksReportManager.Application.Dtos.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application.Dtos\obj\Debug\net6.0\ref\TasksReportManager.Application.Dtos.dll

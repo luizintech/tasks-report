@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TasksReportManager.EFPersistence.ConfigurationMappings;
 using TasksReportManager.EntitiesModel;
 
 namespace TasksReportManager.EFPersistence.DbContexts
@@ -11,6 +12,11 @@ namespace TasksReportManager.EFPersistence.DbContexts
     }
 
     public DbSet<TaskType> TaskTypes { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+      modelBuilder.ApplyConfiguration<TaskType>(new TaskTypeConfiguration());
+    }
 
   }
 }

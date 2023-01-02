@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TasksReportManager.EFPersistence.DbContexts;
+
 namespace TasksReportManager.API
 {
     public class Program
@@ -7,6 +10,10 @@ namespace TasksReportManager.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<TaskReportDbContext>(options =>
+            {
+              options.UseSqlServer(builder.Configuration.GetConnectionString("TaskReportSqlServer"));
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

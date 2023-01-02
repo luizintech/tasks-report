@@ -122,3 +122,6 @@ Thumbs.db
 /api-netcore/TasksReportManager/.vs/TasksReportManager/v17/TestStore/0/001.testlog
 /api-netcore/TasksReportManager/TasksReportManager.EFPersistence/obj/Debug/net6.0/ref/TasksReportManager.EFPersistence.dll
 /api-netcore/TasksReportManager/TasksReportManager.EFPersistence/obj/Debug/net6.0/refint/TasksReportManager.EFPersistence.dll
+/api-netcore/TasksReportManager/TasksReportManager.API/bin/Debug/net6.0/appsettings.json
+/api-netcore/TasksReportManager/TasksReportManager.API/obj/Debug/net6.0/ref/TasksReportManager.API.dll
+/api-netcore/TasksReportManager/TasksReportManager.API/obj/Debug/net6.0/refint/TasksReportManager.API.dll

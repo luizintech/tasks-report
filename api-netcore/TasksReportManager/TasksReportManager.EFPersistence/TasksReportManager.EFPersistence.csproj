@@ -15,4 +15,13 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ConfigurationMappings\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TasksReportManager.EntitiesModel\TasksReportManager.EntitiesModel.csproj" />
+  </ItemGroup>
+
 </Project>

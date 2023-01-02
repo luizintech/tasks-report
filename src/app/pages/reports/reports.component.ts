@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { format } from 'date-fns';
 
 interface Weekdays {
   week: string;
   active: boolean;
   date: Date;
   numberDay: number;
+  totalHours: number;
 }
 
 @Component({
@@ -18,6 +20,7 @@ export class ReportsComponent implements OnInit {
 
   constructor() {
     this.setActiveDay();
+    this.formatActiveDay();
   }
 
   ngOnInit(): void {}
@@ -30,10 +33,12 @@ export class ReportsComponent implements OnInit {
         active: false,
         numberDay: this.getWeekDates()[i].getDate(),
         date: this.getWeekDates()[i],
+        totalHours: 0,
       });
     }
 
     this.weekList[weekDay].active = true;
+    this.weekList[weekDay].totalHours = 8;
 
     console.log(this.weekList);
   }
@@ -52,5 +57,10 @@ export class ReportsComponent implements OnInit {
     }
 
     return dates;
+  }
+
+  formatActiveDay() {
+    const activeDay = this.weekList.filter((week) => week.active)[0];
+    return format(activeDay.date, 'EEEE, do MMMM');
   }
 }

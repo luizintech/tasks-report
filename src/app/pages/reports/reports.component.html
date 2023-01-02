@@ -1,8 +1,27 @@
-<p>report works!</p>
+<section class="calendar">
+  <p class="mb-0">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  </p>
+  <div *ngFor="let dayList of weekList">
+    <p class="mb-0">{{ dayList.week }}</p>
+    <p [ngClass]="dayList.active ? 'mb-0 activeDay' : 'mb-0'">
+      {{ dayList.numberDay }}
+    </p>
+    <p
+      class="totalHourForDay mb-0"
+      [ngClass]="dayList.totalHours ? 'totalHourForDay mb-0' : 'invisible mb-0'"
+    >
+      {{ dayList.totalHours | number : "1.1" }}
+    </p>
+  </div>
+  <p class="mb-0">
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </p>
+</section>
 
-<div *ngFor="let dayList of weekList">
-  <span
-    >{{ dayList.week }}: {{ dayList.numberDay }}
-    {{ dayList.active ? " - Active" : "" }}</span
-  >
-</div>
+<section class="section-header">
+  <p class="mb-0">{{ formatActiveDay() }}</p>
+  <div class="totalDayHours">
+    <h3 class="mb-0">8.0</h3>
+  </div>
+</section>

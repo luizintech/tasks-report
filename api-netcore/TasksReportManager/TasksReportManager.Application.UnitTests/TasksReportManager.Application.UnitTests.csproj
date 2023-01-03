@@ -21,8 +21,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TasksReportManager.Application\TasksReportManager.Application.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TasksReportManager.EFPersistence.DbContexts;
 
@@ -11,9 +12,11 @@ using TasksReportManager.EFPersistence.DbContexts;
 namespace TasksReportManager.EFPersistence.Migrations
 {
     [DbContext(typeof(TaskReportDbContext))]
-    partial class TaskReportDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230103103100_CreateTableActivity")]
+    partial class CreateTableActivity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,48 +58,6 @@ namespace TasksReportManager.EFPersistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Activities", (string)null);
-                });
-
-            modelBuilder.Entity("TasksReportManager.EntitiesModel.ActivityTask", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ActivityId")
-                        .HasColumnType("int")
-                        .HasColumnName("activity_id");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("created_at");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("deleted_at");
-
-                    b.Property<int>("TaskTypeId")
-                        .HasColumnType("int")
-                        .HasColumnName("task_type_id");
-
-                    b.Property<TimeSpan>("TimeElapsed")
-                        .HasColumnType("time")
-                        .HasColumnName("time_elapsed");
-
-                    b.Property<string>("Url")
-                        .HasColumnType("varchar(255)")
-                        .HasColumnName("url");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ActivityId");
-
-                    b.HasIndex("TaskTypeId");
-
-                    b.ToTable("Tasks", (string)null);
                 });
 
             modelBuilder.Entity("TasksReportManager.EntitiesModel.TaskType", b =>
@@ -156,25 +117,6 @@ namespace TasksReportManager.EFPersistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("UserInfos", (string)null);
-                });
-
-            modelBuilder.Entity("TasksReportManager.EntitiesModel.ActivityTask", b =>
-                {
-                    b.HasOne("TasksReportManager.EntitiesModel.Activity", "Activity")
-                        .WithMany()
-                        .HasForeignKey("ActivityId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TasksReportManager.EntitiesModel.TaskType", "TaskType")
-                        .WithMany()
-                        .HasForeignKey("TaskTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Activity");
-
-                    b.Navigation("TaskType");
                 });
 #pragma warning restore 612, 618
         }

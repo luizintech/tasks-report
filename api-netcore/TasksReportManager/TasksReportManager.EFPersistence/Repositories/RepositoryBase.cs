@@ -33,11 +33,6 @@ namespace TasksReportManager.EFPersistence.Repositories
       this._dbContext.Update(entity);
       await this._dbContext.SaveChangesAsync();
     }
-    public virtual async Task DeleteAsync(TEntity entity)
-    {
-      this._dbContext.Remove(entity);
-      await this._dbContext.SaveChangesAsync();
-    }
 
   }
 }

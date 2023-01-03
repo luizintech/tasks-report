@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TasksReportManager.Application\TasksReportManager.Application.csproj" />
     <ProjectReference Include="..\TasksReportManager.EFPersistence\TasksReportManager.EFPersistence.csproj" />
   </ItemGroup>
 

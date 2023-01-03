@@ -18,13 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TasksReportManager.API.Infra\TasksReportManager.API.Infra.csproj" />
     <ProjectReference Include="..\TasksReportManager.Application.Dtos\TasksReportManager.Application.Dtos.csproj" />
-    <ProjectReference Include="..\TasksReportManager.Application\TasksReportManager.Application.csproj" />
     <ProjectReference Include="..\TasksReportManager.EFPersistence\TasksReportManager.EFPersistence.csproj" />
     <ProjectReference Include="..\TasksReportManager.EntitiesModel\TasksReportManager.EntitiesModel.csproj" />
   </ItemGroup>

@@ -3,37 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.API", "TasksReportManager.API\TasksReportManager.API.csproj", "{5783E685-BAEE-4D58-83E9-1ACFEE932C52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.API", "TasksReportManager.API\TasksReportManager.API.csproj", "{5783E685-BAEE-4D58-83E9-1ACFEE932C52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Data", "01-Data", "{22E87C4A-CA7C-43C3-8D80-8A6E86C70D9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.EntitiesModel", "TasksReportManager.EntitiesModel\TasksReportManager.EntitiesModel.csproj", "{88FBD15F-49D2-4824-8AEB-8E83E9D5A984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.EntitiesModel", "TasksReportManager.EntitiesModel\TasksReportManager.EntitiesModel.csproj", "{88FBD15F-49D2-4824-8AEB-8E83E9D5A984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.EFPersistence", "TasksReportManager.EFPersistence\TasksReportManager.EFPersistence.csproj", "{0E4CD24F-CDF7-48FA-9B08-6C4013844063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.EFPersistence", "TasksReportManager.EFPersistence\TasksReportManager.EFPersistence.csproj", "{0E4CD24F-CDF7-48FA-9B08-6C4013844063}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Application Domain", "02-Application Domain", "{35A0091F-592D-4EBB-A05F-81C9BC1C2AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.Application", "TasksReportManager.Application\TasksReportManager.Application.csproj", "{C3F514A3-68FC-4219-AAB0-1830CC5CB859}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Infra", "03-Infra", "{704C78AC-6D5D-4619-8A05-0313A9F4FA09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.API.Infra", "TasksReportManager.API.Infra\TasksReportManager.API.Infra.csproj", "{0CE15D15-3355-4BDC-A40A-3FD97E5948E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.API.Infra", "TasksReportManager.API.Infra\TasksReportManager.API.Infra.csproj", "{0CE15D15-3355-4BDC-A40A-3FD97E5948E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Tests", "04-Tests", "{7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.API.UnitTests", "TasksReportManager.API.UnitTests\TasksReportManager.API.UnitTests.csproj", "{06695021-9EF4-4544-93E1-3ACD3CE626FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.API.UnitTests", "TasksReportManager.API.UnitTests\TasksReportManager.API.UnitTests.csproj", "{06695021-9EF4-4544-93E1-3ACD3CE626FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.EntitiesModel.UnitTests", "TasksReportManager.EntitiesModel.UnitTests\TasksReportManager.EntitiesModel.UnitTests.csproj", "{041B4CB4-9FEE-4416-8874-2A65BC5E480E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.EntitiesModel.UnitTests", "TasksReportManager.EntitiesModel.UnitTests\TasksReportManager.EntitiesModel.UnitTests.csproj", "{041B4CB4-9FEE-4416-8874-2A65BC5E480E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.EFPersistence.UnitTests", "TasksReportManager.EFPersistence.UnitTests\TasksReportManager.EFPersistence.UnitTests.csproj", "{778E1E31-934A-4200-B0A8-77293033FE6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.EFPersistence.UnitTests", "TasksReportManager.EFPersistence.UnitTests\TasksReportManager.EFPersistence.UnitTests.csproj", "{778E1E31-934A-4200-B0A8-77293033FE6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.Application.UnitTests", "TasksReportManager.Application.UnitTests\TasksReportManager.Application.UnitTests.csproj", "{B1670AF6-F27E-415B-9A78-C23013FEE796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.Application.Dtos", "TasksReportManager.Application.Dtos\TasksReportManager.Application.Dtos.csproj", "{BAC8829B-6867-4FDD-B513-29A4C57224FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.Application.Dtos", "TasksReportManager.Application.Dtos\TasksReportManager.Application.Dtos.csproj", "{BAC8829B-6867-4FDD-B513-29A4C57224FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.Application.Dtos.UnitTests", "TasksReportManager.Application.Dtos.UnitTests\TasksReportManager.Application.Dtos.UnitTests.csproj", "{CE3D4785-0928-4083-B21A-59AC9F787FA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.Application.Dtos.UnitTests", "TasksReportManager.Application.Dtos.UnitTests\TasksReportManager.Application.Dtos.UnitTests.csproj", "{CE3D4785-0928-4083-B21A-59AC9F787FA1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksReportManager.API.Infra.UnitTests", "TasksReportManager.API.Infra.UnitTests\TasksReportManager.API.Infra.UnitTests.csproj", "{21CDFBBE-690B-4AE4-BA7A-078A079D0F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksReportManager.API.Infra.UnitTests", "TasksReportManager.API.Infra.UnitTests\TasksReportManager.API.Infra.UnitTests.csproj", "{21CDFBBE-690B-4AE4-BA7A-078A079D0F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +49,6 @@ Global
 		{0E4CD24F-CDF7-48FA-9B08-6C4013844063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E4CD24F-CDF7-48FA-9B08-6C4013844063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E4CD24F-CDF7-48FA-9B08-6C4013844063}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3F514A3-68FC-4219-AAB0-1830CC5CB859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3F514A3-68FC-4219-AAB0-1830CC5CB859}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3F514A3-68FC-4219-AAB0-1830CC5CB859}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3F514A3-68FC-4219-AAB0-1830CC5CB859}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CE15D15-3355-4BDC-A40A-3FD97E5948E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CE15D15-3355-4BDC-A40A-3FD97E5948E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CE15D15-3355-4BDC-A40A-3FD97E5948E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,10 +65,6 @@ Global
 		{778E1E31-934A-4200-B0A8-77293033FE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{778E1E31-934A-4200-B0A8-77293033FE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{778E1E31-934A-4200-B0A8-77293033FE6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B1670AF6-F27E-415B-9A78-C23013FEE796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1670AF6-F27E-415B-9A78-C23013FEE796}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1670AF6-F27E-415B-9A78-C23013FEE796}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1670AF6-F27E-415B-9A78-C23013FEE796}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BAC8829B-6867-4FDD-B513-29A4C57224FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BAC8829B-6867-4FDD-B513-29A4C57224FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC8829B-6867-4FDD-B513-29A4C57224FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -96,12 +84,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{88FBD15F-49D2-4824-8AEB-8E83E9D5A984} = {22E87C4A-CA7C-43C3-8D80-8A6E86C70D9E}
 		{0E4CD24F-CDF7-48FA-9B08-6C4013844063} = {22E87C4A-CA7C-43C3-8D80-8A6E86C70D9E}
-		{C3F514A3-68FC-4219-AAB0-1830CC5CB859} = {35A0091F-592D-4EBB-A05F-81C9BC1C2AF3}
 		{0CE15D15-3355-4BDC-A40A-3FD97E5948E5} = {704C78AC-6D5D-4619-8A05-0313A9F4FA09}
 		{06695021-9EF4-4544-93E1-3ACD3CE626FC} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}
 		{041B4CB4-9FEE-4416-8874-2A65BC5E480E} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}
 		{778E1E31-934A-4200-B0A8-77293033FE6E} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}
-		{B1670AF6-F27E-415B-9A78-C23013FEE796} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}
 		{BAC8829B-6867-4FDD-B513-29A4C57224FE} = {35A0091F-592D-4EBB-A05F-81C9BC1C2AF3}
 		{CE3D4785-0928-4083-B21A-59AC9F787FA1} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}
 		{21CDFBBE-690B-4AE4-BA7A-078A079D0F6A} = {7BFEB891-43A6-4B1F-9D24-FC16F20ADF36}

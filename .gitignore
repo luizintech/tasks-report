@@ -125,3 +125,8 @@ Thumbs.db
 /api-netcore/TasksReportManager/TasksReportManager.API/bin/Debug/net6.0/appsettings.json
 /api-netcore/TasksReportManager/TasksReportManager.API/obj/Debug/net6.0/ref/TasksReportManager.API.dll
 /api-netcore/TasksReportManager/TasksReportManager.API/obj/Debug/net6.0/refint/TasksReportManager.API.dll
+/api-netcore/TasksReportManager/TasksReportManager.API/TasksReportManager.API.csproj.user
+/api-netcore/TasksReportManager/TasksReportManager.API.Infra/obj/Debug/net6.0/TasksReportManager.API.Infra.csproj.FileListAbsolute.txt
+/api-netcore/TasksReportManager/TasksReportManager.Application.Dtos/obj/Debug/net6.0/ref/TasksReportManager.Application.Dtos.dll
+/api-netcore/TasksReportManager/TasksReportManager.Application.Dtos/obj/Debug/net6.0/refint/TasksReportManager.Application.Dtos.dll
+/api-netcore/TasksReportManager/TasksReportManager.Application.Dtos/obj/Debug/net6.0/TasksReportManager.Application.Dtos.csproj.CoreCompileInputs.cache

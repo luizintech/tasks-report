@@ -22,5 +22,19 @@ namespace TasksReportManager.EntitiesModel.UnitTests
       Assert.Equal(isEmpty, string.IsNullOrEmpty(userInfo.Name));
     }
 
+    [Fact()]
+    public void Validate_EntityModel_Identification()
+    {
+      //Arrange
+      var userInfo = new UserInfo();
+      var identification = Guid.NewGuid().ToString();
+
+      //Act
+      userInfo.Identification = identification;
+
+      //Assert
+      Assert.NotNull(userInfo.Identification);
+    }
+
   }
 }

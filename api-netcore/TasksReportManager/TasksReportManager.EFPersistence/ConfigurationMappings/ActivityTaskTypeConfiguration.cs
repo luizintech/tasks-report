@@ -26,6 +26,7 @@ namespace TasksReportManager.EFPersistence.ConfigurationMappings
 
       builder.Property(m => m.Url)
           .HasColumnName("url")
+          .HasColumnType("varchar(255)")
           .IsRequired(false);
 
       builder.Property(m => m.TimeElapsed)

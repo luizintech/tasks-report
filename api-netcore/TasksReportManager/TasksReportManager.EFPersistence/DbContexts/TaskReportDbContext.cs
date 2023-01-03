@@ -14,12 +14,14 @@ namespace TasksReportManager.EFPersistence.DbContexts
     public DbSet<TaskType> TaskTypes { get; set; }
     public DbSet<UserInfo> UserInfos { get; set; }
     public DbSet<Activity> Activities { get; set; }
+    public DbSet<ActivityTask> Tasks { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       modelBuilder.ApplyConfiguration<UserInfo>(new UserInfoConfiguration());
       modelBuilder.ApplyConfiguration<TaskType>(new TaskTypeConfiguration());
       modelBuilder.ApplyConfiguration<Activity>(new ActivityConfiguration());
+      modelBuilder.ApplyConfiguration<ActivityTask>(new ActivityTaskConfiguration());
     }
 
   }

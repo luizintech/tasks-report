@@ -46,12 +46,12 @@ export class ReportsComponent implements OnInit {
   getWeekDates() {
     let dates = [];
     const today = new Date();
-    const remDaysCount = 7 - today.getDay();
+    // const remDaysCount = 7 - today.getDay();
     const diff =
       today.getDate() - today.getDay() + (today.getDay() == 0 ? -6 : 0);
     dates = [new Date(today.setDate(diff))];
 
-    for (let i = 1; i <= remDaysCount + 1; i++) {
+    for (let i = 1; i <= 7; i++) {
       const nextDate = today.setDate(today.getDate() + 1);
       dates.push(new Date(nextDate));
     }

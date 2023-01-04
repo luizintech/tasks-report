@@ -6,7 +6,7 @@ export const menu: NavItem[] = [
     iconName: 'fas fa-clock',
     route: 'reports',
   },
-  {
+  /*{
     displayName: 'Menu 2',
     iconName: 'fas fa-clock',
     route: 'entradasGADE',
@@ -37,5 +37,5 @@ export const menu: NavItem[] = [
         route: '/busquedaperfiles',
       },
     ],
-  },
+  },*/
 ];

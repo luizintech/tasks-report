@@ -9,6 +9,7 @@ namespace TasksReportManager.API.Infra
     {
       service.AddScoped<TaskTypeRepository>();
       service.AddScoped<ActivityRepository>();
+      service.AddScoped<ActivityTaskRepository>();
       return service;
     }
   }

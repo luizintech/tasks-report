@@ -1,24 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using TasksReportManager.Application.Dtos.Messages;
-using TasksReportManager.Application.Dtos.TaskTypes;
+using TasksReportManager.Application.Dtos.Activities;
 using TasksReportManager.EFPersistence.Repositories;
 
 namespace TasksReportManager.API.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class TaskTypeController
+  public class ActivityController
     : ControllerBase
   {
 
-    private readonly ILogger<TaskTypeController> _logger;
-    private readonly TaskTypeRepository _repository;
+    private readonly ILogger<ActivityController> _logger;
+    private readonly ActivityRepository _repository;
 
-    public TaskTypeController(ILogger<TaskTypeController> logger,
-      TaskTypeRepository taskTypeRepository)
+    public ActivityController(ILogger<ActivityController> logger,
+      ActivityRepository ActivityRepository)
     {
       _logger = logger;
-      _repository = taskTypeRepository;
+      _repository = ActivityRepository;
     }
 
     [HttpGet]
@@ -34,7 +34,7 @@ namespace TasksReportManager.API.Controllers
     }
 
     [HttpPost]
-    public async Task<IActionResult> PostAsync([FromBody] TaskTypeEditDto entry)
+    public async Task<IActionResult> PostAsync([FromBody] ActivityEditDto entry)
     {
       var result = new ResultDto();
 
@@ -52,7 +52,7 @@ namespace TasksReportManager.API.Controllers
     }
 
     [HttpPut("{id:int}")]
-    public async Task<IActionResult> PutAsync([FromRoute]int id, [FromBody] TaskTypeEditDto entry)
+    public async Task<IActionResult> PutAsync([FromRoute]int id, [FromBody] ActivityEditDto entry)
     {
       var result = new ResultDto();
 

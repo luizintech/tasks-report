@@ -1,24 +1,32 @@
 using Microsoft.AspNetCore.Mvc;
 using TasksReportManager.Application.Dtos.Messages;
-using TasksReportManager.Application.Dtos.TaskTypes;
+using TasksReportManager.Application.Dtos.Activities;
 using TasksReportManager.EFPersistence.Repositories;
+using TasksReportManager.Application.Dtos.ActivityTasks;
+using TasksReportManager.EntitiesModel;
 
 namespace TasksReportManager.API.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class TaskTypeController
+  public class ActivityTaskController
     : ControllerBase
   {
 
-    private readonly ILogger<TaskTypeController> _logger;
-    private readonly TaskTypeRepository _repository;
+    private readonly ILogger<ActivityTaskController> _logger;
+    private readonly ActivityTaskRepository _repository;
+    private readonly ActivityRepository _activityRepository;
+    private readonly TaskTypeRepository _taskTypeRepository;
 
-    public TaskTypeController(ILogger<TaskTypeController> logger,
+    public ActivityTaskController(ILogger<ActivityTaskController> logger,
+      ActivityTaskRepository activityTaskRepository,
+      ActivityRepository activityRepository,
       TaskTypeRepository taskTypeRepository)
     {
       _logger = logger;
-      _repository = taskTypeRepository;
+      _repository = activityTaskRepository;
+      _activityRepository = activityRepository;
+      _taskTypeRepository = taskTypeRepository;
     }
 
     [HttpGet]
@@ -34,13 +42,16 @@ namespace TasksReportManager.API.Controllers
     }
 
     [HttpPost]
-    public async Task<IActionResult> PostAsync([FromBody] TaskTypeEditDto entry)
+    public async Task<IActionResult> PostAsync([FromBody] ActivityTaskEditDto entry)
     {
       var result = new ResultDto();
 
       try
       {
-        await this._repository.AddAsync(entry.ToEntityModel());
+        var entity = entry.ToEntityModel();
+        await RetrieveTableRelationsToStore(entity);
+
+        await this._repository.AddAsync(entity);
         result.Success = true;
         return Ok(result);
       }
@@ -52,7 +63,7 @@ namespace TasksReportManager.API.Controllers
     }
 
     [HttpPut("{id:int}")]
-    public async Task<IActionResult> PutAsync([FromRoute]int id, [FromBody] TaskTypeEditDto entry)
+    public async Task<IActionResult> PutAsync([FromRoute]int id, [FromBody] ActivityTaskEditDto entry)
     {
       var result = new ResultDto();
 
@@ -62,7 +73,10 @@ namespace TasksReportManager.API.Controllers
         if (entity == null)
           return NotFound();
 
-        await this._repository.UpdateAsync(entry.FillModel(entity));
+        var entityUpdate = entry.FillModel(entity);
+        await RetrieveTableRelationsToStore(entityUpdate);
+
+        await this._repository.UpdateAsync(entityUpdate);
         result.Success = true;
         return Ok(result);
       }
@@ -94,6 +108,12 @@ namespace TasksReportManager.API.Controllers
         _logger.LogError(ex.ToString());
         return StatusCode(500, ex.ToString());
       }
+    }
+
+    private async Task RetrieveTableRelationsToStore(ActivityTask entity)
+    {
+      entity.TaskType = await this._taskTypeRepository.GetByIdAsync(entity.TaskTypeId);
+      entity.Activity = await this._activityRepository.GetByIdAsync(entity.ActivityId);
     }
   }
 }

@@ -8,6 +8,8 @@ namespace TasksReportManager.API.Infra
     public static IServiceCollection AddRepositoriesScope(this IServiceCollection service)
     {
       service.AddScoped<TaskTypeRepository>();
+      service.AddScoped<ActivityRepository>();
+      service.AddScoped<ActivityTaskRepository>();
       return service;
     }
   }

@@ -8,12 +8,12 @@ namespace TasksReportManager.EFPersistence.Repositories
     : IRepository<TEntity>
     where TEntity : EntityBase
   {
-    private readonly TaskReportDbContext _dbContext;
+    protected readonly TaskReportDbContext _dbContext;
     protected RepositoryBase()
       : base() { }
     public RepositoryBase(TaskReportDbContext context)
     {
-      this._dbContext = context;
+      this._dbContext = context ?? throw new ArgumentNullException($"Contexto não pode ser injetado.");
     }
     public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
     {

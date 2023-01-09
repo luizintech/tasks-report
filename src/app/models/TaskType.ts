@@ -1,4 +1,10 @@
-export class TaskType {
-    id: number = 0;
-    name: string = "";
+import { Resources } from './Resources';
+
+export class TaskType extends Resources {
+  id: number = 0;
+  name: string = '';
+
+  constructor() {
+    super();
+  }
 }

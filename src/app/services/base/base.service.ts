@@ -9,7 +9,6 @@ import { environment } from 'src/environments/environment';
 })
 export abstract class BaseService<TEntity> {
 
-  private resourceName = "";
   private headers: HttpHeaders;
 
   constructor(private http: HttpClient) {

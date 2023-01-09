@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { format } from 'date-fns';
+import { BaseService } from 'src/app/services/base/base.service';
 
 interface Weekdays {
   week: string;
@@ -18,12 +19,16 @@ export class ReportsComponent implements OnInit {
   weekList: Weekdays[] = [];
   weekDays: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-  constructor() {
+  constructor(private service: BaseService<TaskType>) {
     this.setActiveDay();
     this.formatActiveDay();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.listAll("TaskType").subscribe((data: TaskType[]) => {
+      
+    });
+  }
 
   setActiveDay() {
     let weekDay = new Date().getDay();

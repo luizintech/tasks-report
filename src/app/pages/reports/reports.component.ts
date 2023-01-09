@@ -25,9 +25,9 @@ export class ReportsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.listAll("TaskType").subscribe((data: TaskType[]) => {
+    // this.service.listAll("TaskType").subscribe((data: TaskType[]) => {
       
-    });
+    // });
   }
 
   setActiveDay() {

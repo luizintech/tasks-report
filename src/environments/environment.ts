@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  taskManagerApi: "https://localhost:5194/api"
 };
 
 /*

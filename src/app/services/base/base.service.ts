@@ -27,7 +27,10 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
   ) {
     this.headers = new HttpHeaders({
       'content-Type': 'application/json',
-      'Access-Control-Allow-Origin': window.location.host,
+      'Access-Control-Allow-Origin': `https://${window.location.host}`,
+      'Access-Control-Allow-Credentials': "true",
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept'
     });
   }
 

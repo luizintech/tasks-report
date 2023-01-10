@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  taskManagerApi: "https://localhost:7204/api"
 };

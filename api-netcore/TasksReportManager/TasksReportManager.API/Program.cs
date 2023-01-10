@@ -6,6 +6,7 @@ namespace TasksReportManager.API
 {
   public class Program
   {
+
     public static void Main(string[] args)
     {
       var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,27 @@ namespace TasksReportManager.API
       });
 
       builder.Services.AddRepositoriesScope();
+
+      #region Cors configuration
+      var corsDomainSite = "https://localhost:4200";
+      var adminPortalSite = "localhost:4200";
+      string corsSpecificationOrigins = "_corsSpecificationOrigins";
+
+      builder.Services.AddCors(options =>
+      {
+        options.AddPolicy(name: corsSpecificationOrigins,
+            builder =>
+            {
+              builder.WithOrigins(
+                          corsDomainSite,
+                          adminPortalSite 
+                      )
+                      .AllowAnyHeader()
+                      .AllowAnyMethod()
+                      .AllowCredentials();
+            });
+      });
+      #endregion
 
       builder.Services.AddControllers();
       // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -36,10 +58,12 @@ namespace TasksReportManager.API
 
       app.UseAuthorization();
 
+      app.UseCors(corsSpecificationOrigins);
 
       app.MapControllers();
 
       app.Run();
     }
+
   }
 }

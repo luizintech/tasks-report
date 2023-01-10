@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Result } from 'src/app/dtos/Result';
+import { TaskType } from 'src/app/models/TaskType';
 import { environment } from 'src/environments/environment';
 
 export abstract class BaseCons<T> {
@@ -32,7 +33,7 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
 
   public listAll(): Observable<TEntity[]> {
     return this.httpClient
-      .get<TEntity[]>(`${environment.taskManagerApi}`, {
+      .get<TEntity[]>(`${environment.taskManagerApi}/${TaskType.toUrlResource()}`, {
         headers: this.headers,
       })
       .pipe(
@@ -42,9 +43,17 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
       );
   }
 
-  public getById(id: number, type: string): Observable<TEntity[]> {
+  public getById(id: number): Observable<TEntity[]> {
     return this.httpClient.get<TEntity[]>(
-      `${environment.taskManagerApi}/${type}/${id}`,
+      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
+      { headers: this.headers }
+    );
+  }
+
+  public post(taskType: TEntity): Observable<Result> {
+    return this.httpClient.put<Result>(
+      `${environment.taskManagerApi}/${TaskType.toUrlResource()}`,
+      taskType,
       { headers: this.headers }
     );
   }
@@ -64,17 +73,17 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
       .pipe(map((result) => new this.baseConstructor(result)));
   }*/
 
-  public put(id: number, taskType: TEntity, type: string): Observable<Result> {
+  public put(id: number, taskType: TEntity): Observable<Result> {
     return this.httpClient.put<Result>(
-      `${environment.taskManagerApi}/${type}/${id}`,
+      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
       taskType,
       { headers: this.headers }
     );
   }
 
-  public delete(id: number, type: string): Observable<Result> {
+  public delete(id: number): Observable<Result> {
     return this.httpClient.put<Result>(
-      `${environment.taskManagerApi}/${type}/${id}`,
+      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
       { headers: this.headers }
     );
   }

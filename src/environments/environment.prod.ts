@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  taskManagerApi: "https://localhost:5194/api"
+  taskManagerApi: "https://localhost:7204/api"
 };

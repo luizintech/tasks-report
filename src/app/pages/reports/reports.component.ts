@@ -2,6 +2,8 @@ import { TasksService } from './../../services/tasks/tasks.service';
 import { Component, OnInit } from '@angular/core';
 import { format } from 'date-fns';
 import { TaskTypeService } from 'src/app/services/task-type/task-type.service';
+import { ActivityService } from 'src/app/services/activities/activity.service';
+import { Activity } from 'src/app/models/Activity';
 
 interface Weekdays {
   week: string;
@@ -20,16 +22,18 @@ interface Weekdays {
 export class ReportsComponent implements OnInit {
   weekList: Weekdays[] = [];
   weekDays: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  public activities: Activity[] = [];
 
-  constructor(private taskTypeService: TaskTypeService) {
+  constructor(private activityService: ActivityService) {
     this.setActiveDay();
     this.formatActiveDay();
   }
 
   ngOnInit(): void {
-    // this.taskTypeService.listAll().subscribe((tasks) => {
-    //   console.log('All tasks', tasks);
-    // });
+    this.activityService.listAll().subscribe((tasks: Activity[]) => {
+      console.log('All tasks', tasks);
+      this.activities = tasks;
+    });
   }
 
   setActiveDay() {

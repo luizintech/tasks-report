@@ -4,8 +4,8 @@ export class Activity
     extends BaseModel
 {
     public name: string = "";
-    public start_date: Date = new Date();
-    public start_end: Date = new Date();
+    public startDate: Date = new Date();
+    public endDate: Date = new Date();
 
     constructor() {
         super();

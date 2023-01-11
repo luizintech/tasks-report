@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 
 import { LayoutsModule } from './components/layouts/layouts.module';
 import { TaskTypeListComponent } from './pages/maintenance-cruds/task-types/task-type-list/task-type-list.component';
+import { ActivityListComponent } from './pages/maintenance-cruds/activities/activity-list/activity-list.component';
 
 @NgModule({
-  declarations: [AppComponent, TaskTypeListComponent],
+  declarations: [AppComponent, TaskTypeListComponent, ActivityListComponent],
   imports: [
     BrowserModule, 
     AppRoutingModule, 

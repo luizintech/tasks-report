@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { TaskTypeListComponent } from './pages/task-types/task-type-list/task-type-list.component';
+import { TaskTypeListComponent } from './pages/maintenance-cruds/task-types/task-type-list/task-type-list.component';
 
 const routes: Routes = [
   {

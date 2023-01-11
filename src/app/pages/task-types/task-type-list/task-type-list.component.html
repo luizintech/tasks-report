@@ -20,7 +20,7 @@
               <td>{{type.name}}</td>
               <td>{{type.createdAt | date}}</td>
               <td>
-                <div *ngIf="type.deletedAt != null" class="badge badge-danger">Excluido</div>&nbsp;
+                <div *ngIf="type.deletedAt != null" class="badge badge-danger">Excluido</div>
                 <div *ngIf="type.deletedAt == null" class="badge badge-success">Ativo</div>
               </td>
               <td>

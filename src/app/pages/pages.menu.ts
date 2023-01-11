@@ -11,6 +11,11 @@ export const menu: NavItem[] = [
     iconName: 'fas fa-wrench',
     route: 'task-types',
   },
+  {
+    displayName: 'Atividades',
+    iconName: 'fas fa-map-pin',
+    route: 'activities',
+  },
   /*{
     displayName: 'Menu 2',
     iconName: 'fas fa-clock',

@@ -8,6 +8,6 @@ import { BaseService } from '../base/base.service';
 })
 export class ActivityTaskService extends BaseService<ActivityTask> {
   constructor(private http: HttpClient) {
-    super(http, ActivityTask);
+    super(http, ActivityTask, ActivityTask.toUrlResource());
   }
 }

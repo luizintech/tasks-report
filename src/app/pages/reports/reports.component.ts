@@ -1,4 +1,3 @@
-import { TasksService } from './../../services/tasks/tasks.service';
 import { Component, OnInit } from '@angular/core';
 import { format } from 'date-fns';
 import { TaskTypeService } from 'src/app/services/task-type/task-type.service';
@@ -17,7 +16,7 @@ interface Weekdays {
   selector: 'app-reports',
   templateUrl: './reports.component.html',
   styleUrls: ['./reports.component.scss'],
-  providers: [TasksService],
+  providers: [],
 })
 export class ReportsComponent implements OnInit {
   weekList: Weekdays[] = [];

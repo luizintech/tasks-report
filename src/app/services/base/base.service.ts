@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Result } from 'src/app/dtos/Result';
-import { TaskType } from 'src/app/models/TaskType';
 import { environment } from 'src/environments/environment';
 
 export abstract class BaseCons<T> {
@@ -23,7 +22,8 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
     private httpClient: HttpClient,
     private baseConstructor: {
       new (m: Partial<TEntity>): TEntity;
-    }
+    },
+    private urlResourcePath: string
   ) {
     this.headers = new HttpHeaders({
       'content-Type': 'application/json',
@@ -35,8 +35,9 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
   }
 
   public listAll(): Observable<TEntity[]> {
+    
     return this.httpClient
-      .get<TEntity[]>(`${environment.taskManagerApi}/${TaskType.toUrlResource()}`, {
+      .get<TEntity[]>(`${environment.taskManagerApi}/${this.urlResourcePath}`, {
         headers: this.headers });
       // .pipe(
       //   map((response) =>
@@ -47,15 +48,15 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
 
   public getById(id: number): Observable<TEntity> {
     return this.httpClient.get<TEntity>(
-      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
+      `${environment.taskManagerApi}/${this.urlResourcePath}/${id}`,
       { headers: this.headers }
     );
   }
 
-  public post(taskType: TEntity): Observable<Result> {
+  public post(entity: TEntity): Observable<Result> {
     return this.httpClient.put<Result>(
-      `${environment.taskManagerApi}/${TaskType.toUrlResource()}`,
-      taskType,
+      `${environment.taskManagerApi}/${this.urlResourcePath}`,
+      entity,
       { headers: this.headers }
     );
   }
@@ -75,17 +76,17 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
       .pipe(map((result) => new this.baseConstructor(result)));
   }*/
 
-  public put(id: number, taskType: TEntity): Observable<Result> {
+  public put(id: number, entity: TEntity): Observable<Result> {
     return this.httpClient.put<Result>(
-      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
-      taskType,
+      `${environment.taskManagerApi}/${this.urlResourcePath}/${id}`,
+      entity,
       { headers: this.headers }
     );
   }
 
   public delete(id: number): Observable<Result> {
     return this.httpClient.put<Result>(
-      `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
+      `${environment.taskManagerApi}/${this.urlResourcePath}/${id}`,
       { headers: this.headers }
     );
   }

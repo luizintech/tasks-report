@@ -1,6 +1,6 @@
-import { Resources } from './Resources';
+import { BaseModel } from './BaseModel';
 
-export class TaskType extends Resources {
+export class TaskType extends BaseModel {
   
   name: string = '';
 

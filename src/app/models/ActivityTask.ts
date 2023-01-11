@@ -1,11 +1,16 @@
-import { Resources } from "./Resources";
+import { Activity } from "./Activity";
+import { BaseModel } from "./BaseModel";
+import { TaskType } from "./TaskType";
 
 export class ActivityTask 
-    extends Resources
+    extends BaseModel
 {
     public taskTypeId: number = 0;
     public activityId: number = 0;
+    public activity: Activity = new Activity();
+    public taskType: TaskType = new TaskType();
     public url: string = "";
+    public timeElapsed: string = "00:00";
     public timeElapsedEntry: string = "00:00";
 
     constructor() {

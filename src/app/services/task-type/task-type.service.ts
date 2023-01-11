@@ -9,6 +9,6 @@ import { BaseService } from '../base/base.service';
 
 export class TaskTypeService extends BaseService<TaskType> {
   constructor(private http: HttpClient) {
-    super(http, TaskType);
+    super(http, TaskType,TaskType.toUrlResource());
   }
 }

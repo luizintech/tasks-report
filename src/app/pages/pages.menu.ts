@@ -6,6 +6,21 @@ export const menu: NavItem[] = [
     iconName: 'fas fa-clock',
     route: 'reports',
   },
+  {
+    displayName: 'Tipos de Tarefas',
+    iconName: 'fas fa-wrench',
+    route: 'task-types',
+  },
+  {
+    displayName: 'Atividades',
+    iconName: 'fas fa-map-pin',
+    route: 'activities',
+  },
+  {
+    displayName: 'Tarefas',
+    iconName: 'fas fa-tasks',
+    route: 'tasks',
+  },
   /*{
     displayName: 'Menu 2',
     iconName: 'fas fa-clock',

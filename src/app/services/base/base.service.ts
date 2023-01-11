@@ -37,12 +37,12 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
   public listAll(): Observable<TEntity[]> {
     return this.httpClient
       .get<TEntity[]>(`${environment.taskManagerApi}/${TaskType.toUrlResource()}`, {
-        headers: this.headers })
-      .pipe(
-        map((response) =>
-          response.map((r) => new this.baseConstructor(r.toJSON()))
-        )
-      );
+        headers: this.headers });
+      // .pipe(
+      //   map((response) =>
+      //     response.map((r) => new this.baseConstructor(r.toJSON()))
+      //   )
+      // );
   }
 
   public getById(id: number): Observable<TEntity> {

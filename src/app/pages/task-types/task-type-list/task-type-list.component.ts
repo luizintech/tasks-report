@@ -20,6 +20,7 @@ export class TaskTypeListComponent implements OnInit {
   ngOnInit(): void {
     this.taskTypeService.listAll().subscribe((data: TaskType[]) => {
       this.taskTypes = data;
+      console.log(this.taskTypes);
     });
   }
 

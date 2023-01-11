@@ -1,7 +1,7 @@
-import { Resources } from "./Resources";
+import { BaseModel } from "./BaseModel";
 
 export class Activity
-    extends Resources
+    extends BaseModel
 {
     public name: string = "";
     public start_date: Date = new Date();

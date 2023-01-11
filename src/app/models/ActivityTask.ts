@@ -1,7 +1,7 @@
-import { Resources } from "./Resources";
+import { BaseModel } from "./BaseModel";
 
 export class ActivityTask 
-    extends Resources
+    extends BaseModel
 {
     public taskTypeId: number = 0;
     public activityId: number = 0;

@@ -1,5 +1,7 @@
-export abstract class Resources {
+export abstract class BaseModel {
   id: number = 0;
+  createdAt: Date = new Date();
+  deletedAt: Date = new Date();
 
   public static toUrlResource() {
     return "";

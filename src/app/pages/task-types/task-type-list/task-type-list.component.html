@@ -6,6 +6,7 @@
       <div class="card-body p-0">
         <div class="table-responsive">
           <table class="table table-striped table-md">
+            
             <tr>
               <th>#</th>
               <th>Nome</th>
@@ -14,12 +15,12 @@
               <th>Ação</th>
             </tr>
 
-            <tr *ngFor="type of taskTypes">
+            <tr *ngFor="let type of taskTypes">
               <td>{{type.id}}</td>
               <td>{{type.name}}</td>
-              <td>{{type.created_at}}</td>
+              <td>{{type.createdAt}}</td>
               <td>
-                <div *ngIf="type.deleted_at != null" class="badge badge-success">Active</div>
+                <div *ngIf="type.deletedAt != null" class="badge badge-success">Active</div>
               </td>
               <td>
                 <a href="/edit/{{type.id}}" class="btn btn-secondary">Edit</a>

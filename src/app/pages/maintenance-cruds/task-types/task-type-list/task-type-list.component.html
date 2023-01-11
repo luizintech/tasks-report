@@ -32,6 +32,14 @@
                 </a>
               </td>
             </tr>
+
+            <tr *ngIf="taskTypes.length == 0">
+              <td colspan="5">
+                <div class="alert alert-info">
+                  Nenhum tipo ainda registrado.
+                </div>
+              </td>
+          </tr>
             
           </table>
         </div>

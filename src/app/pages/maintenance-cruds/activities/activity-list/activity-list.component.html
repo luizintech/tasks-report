@@ -34,6 +34,14 @@
                 </a>
               </td>
             </tr>
+
+            <tr *ngIf="activities.length == 0">
+                <td colspan="6">
+                    <div class="alert alert-info">
+                        Nenhuma atividade ainda registrada.
+                    </div>
+                </td>
+            </tr>
             
           </table>
         </div>

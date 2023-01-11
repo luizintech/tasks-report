@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LayoutsModule } from './components/layouts/layouts.module';
+import { TaskTypeListComponent } from './pages/task-types/task-type-list/task-type-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TaskTypeListComponent],
   imports: [
     BrowserModule, 
     AppRoutingModule, 

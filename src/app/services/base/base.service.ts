@@ -37,8 +37,7 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
   public listAll(): Observable<TEntity[]> {
     return this.httpClient
       .get<TEntity[]>(`${environment.taskManagerApi}/${TaskType.toUrlResource()}`, {
-        headers: this.headers,
-      })
+        headers: this.headers })
       .pipe(
         map((response) =>
           response.map((r) => new this.baseConstructor(r.toJSON()))
@@ -46,8 +45,8 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
       );
   }
 
-  public getById(id: number): Observable<TEntity[]> {
-    return this.httpClient.get<TEntity[]>(
+  public getById(id: number): Observable<TEntity> {
+    return this.httpClient.get<TEntity>(
       `${environment.taskManagerApi}/${TaskType.toUrlResource()}/${id}`,
       { headers: this.headers }
     );

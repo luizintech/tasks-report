@@ -10,7 +10,7 @@ export abstract class BaseCons<T> {
     console.log('base Cons', model);
   }
 
-  public toJSON(): any {
+    public toJSON(): any {
     return JSON.parse(JSON.stringify(this));
   }
 }
@@ -38,11 +38,12 @@ export abstract class BaseService<TEntity extends BaseCons<TEntity>> {
     
     return this.httpClient
       .get<TEntity[]>(`${environment.taskManagerApi}/${this.urlResourcePath}`, {
-        headers: this.headers });
-      // .pipe(
-      //   map((response) =>
-      //     response.map((r) => new this.baseConstructor(r.toJSON()))
-      //   )
+        headers: this.headers });//;
+        // .pipe(
+        // map((response) =>
+        //   //response.map((r) => new this.baseConstructor(r.toJSON()))
+        //   JSON.parse(JSON.stringify(response))
+        // )
       // );
   }
 

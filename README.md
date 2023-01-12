@@ -5,6 +5,16 @@ Este projeto tem por objetivo aplicar alguns conhecimentos adquiridos nos treina
 O projeto da API foi desenvolvido em .NET Core 6, utilizando sempre as melhores práticas e pensando nos princípios do SOLID, testes unitários e um simples documentação utilizando o Swagger.
 Já na parte do frontend, aplicamos um projeto com a última versão do Angular, a saber a versão 14, pensando também nas melhores práticas de usabilidade e também a escrita dos testes unitários utilizando o Jasmine.
 
+## Resumo sobre as tecnologias utilizadas
+
+<b>Microserviço Tasks - .NET Core 6 inclue:</b>
+
+- ASP.NET Core Web API application
+- REST API principles, CRUD operations
+- MS SQL Server database connection
+- Repository Pattern Implementation
+- Swagger Open API implementation
+
 ## Task Report App
 Application using Angular 14.7.0 for regitering Weekly Activities Hours.
 
@@ -13,8 +23,12 @@ Application using Angular 14.7.0 for regitering Weekly Activities Hours.
 `npm start`
 
 # Dados e armazenamento
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Todas as informações do projeto de banco de dados você pode acessar no diretório <a href="https://github.com/fernandosgodoy/tasks-report/tree/devel/documents">/Documents</a>
 
-# ALM e Pipelines DevOps
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# Authors
+Este projeto foi pensado em parceria com os colegas de trabalho que pode ser acessado na página de <a href="https://github.com/fernandosgodoy/tasks-report/graphs/contributors">Contributors</a>, ou em suas respectivas contas do GitHub:
+- Alexandre Oliveira    | <a href="https://www.github.com/" target="_blank">GitHub</a> | <a href="#" target="_blank">LinkedIn</a>
+- Andre P. Figueiredo   | <a href="https://github.com/aandrepf" target="_blank">GitHub</a> | <a href="#" target="_blank">LinkedIn</a>
+- Luiz F. de Santana    | <a href="https://www.github.com/fernandosgodoy" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/luiz-fernando-s-997793189/" target="_blank">LinkedIn</a>
 
+Lisboa (Janeiro/2023)

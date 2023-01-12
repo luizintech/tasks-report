@@ -27,8 +27,8 @@ Todas as informações do projeto de banco de dados você pode acessar no diret�
 
 # Authors
 Este projeto foi pensado em parceria com os colegas de trabalho que pode ser acessado na página de <a href="https://github.com/fernandosgodoy/tasks-report/graphs/contributors">Contributors</a>, ou em suas respectivas contas do GitHub:
-- Alexandre Alves       | <a href="https://www.github.com/" target="_blank">GitHub</a>
-- André                 | <a href="https://www.github.com/" target="_blank">GitHub</a>
-- Luiz Fernando         | <a href="https://www.github.com/fernandosgodoy" target="_blank">GitHub</a>
+- Alexandre Alves       | <a href="https://www.github.com/" target="_blank">GitHub</a> | <a href="" target="_blank">LinkedIn</a>
+- André                 | <a href="https://www.github.com/" target="_blank">GitHub</a> | <a href="" target="_blank">LinkedIn</a>
+- Luiz Fernando         | <a href="https://www.github.com/fernandosgodoy" target="_blank">GitHub</a> | <a href="" target="_blank">LinkedIn</a>
 
 Lisboa (Janeiro/2023)

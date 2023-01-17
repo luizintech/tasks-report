@@ -1,0 +1,17 @@
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.Application.deps.json
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.Application.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.Application.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.EntitiesModel.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.EntitiesModel.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.csproj.AssemblyReference.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.AssemblyInfoInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.AssemblyInfo.cs
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.csproj.CoreCompileInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.csproj.CopyComplete
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\refint\TasksReportManager.Application.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\TasksReportManager.Application.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\obj\Debug\net6.0\ref\TasksReportManager.Application.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.Application.Dtos.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.Application\bin\Debug\net6.0\TasksReportManager.Application.Dtos.pdb

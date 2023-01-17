@@ -1,0 +1,12 @@
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\bin\Debug\net6.0\TasksReportManager.EntitiesModel.deps.json
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\bin\Debug\net6.0\TasksReportManager.EntitiesModel.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\bin\Debug\net6.0\TasksReportManager.EntitiesModel.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.csproj.AssemblyReference.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.AssemblyInfoInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.AssemblyInfo.cs
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.csproj.CoreCompileInputs.cache
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\refint\TasksReportManager.EntitiesModel.dll
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\TasksReportManager.EntitiesModel.pdb
+C:\.projetos\tasks-report\api-netcore\TasksReportManager\TasksReportManager.EntitiesModel\obj\Debug\net6.0\ref\TasksReportManager.EntitiesModel.dll
